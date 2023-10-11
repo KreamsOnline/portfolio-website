@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    /* background-color: #333; */
+    
+}
+
+
+
+.hero {
+   
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo img {
+    max-height: 100px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    /* Add more content here to see the effect of the sticky navbar */
+}
+
+.title {
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 40px !important;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-container {
+    /* background-color: #333; */
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.name, .skills {
+    font-size: 36px;
+    position: absolute;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+.about-me {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s, transform 1s;
+    padding: 30px;
+}
+
+.name.active, .skills.active, .about-me.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.name {
+    right: 100%;
+    opacity: 0;
+    animation: slideInRight 1s forwards;
+}
+
+#fade-out-text {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.skills {
+    left: 100%;
+    opacity: 0;
+    animation: slideInLeft 1s forwards;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.contactform {
+    padding: 30px;
+}
+
+.boxDesign {
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.box1 {
+    background-image: url("./images/developer-computers.png");
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.back2 {
+    background-image: url("./images/developer-pc2.png"); 
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.footer-social a,
+.footer-contact a {
+color: #fff;
+text-decoration: none;
+margin: 0 10px;
+font-size: 18px;
+}
+
+.footer-copyright {
+margin-top: 20px;
+}
+  
+.slider-container {
+    padding: 20px;
+    width: 100%; /* Adjust the width as needed */
+    overflow: hidden;
+}
+  
+.card {
+    width: 100%;
+    min-height: 200px; /* Adjust the height as needed */
+    background-color: #f1f1f1;
+    transform: translateX(100%);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+}
+
+/* Background Animations */
+
+.bgAnimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: #1d1d1d;
+    filter: saturate(2);
+    overflow: hidden;
+}
+
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: #1d1d1d;
+}
+
+.colorBox:hover {
+    background: #00bfff;
+    transition-duration: 0s;
+}
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #00bfff;
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
