@@ -39,6 +39,12 @@ h1 {
     animation: scrollAnimation 10s infinite;
 }
 
+.hero3 {
+    background-image: url("./images/background-about.png");
+    background-size: cover;
+    animation: scrollAnimation 10s infinite;
+}
+
 @keyframes scrollAnimation {
     0% {
         background-position: 0% 0%;
@@ -272,6 +278,24 @@ h1 {
     background-position: center;
 }
 
+.back3 {
+    background-image: url("./images/blogimage.png"); 
+    background-size: cover;
+    background-position: center;
+}
+
+.back4 {
+    background-image: url("./images/contactme.png"); 
+    background-size: cover;
+    background-position: center;
+}
+
+.back5 {
+    background-image: url("./images/comingsoon.png"); 
+    background-size: cover;
+    background-position: center;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -374,7 +398,28 @@ margin-top: 20px;
     }
 }
 
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
+input[type="text"],
+input[type="email"],
+textarea,
+.button2 {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
 
 #clouds{
     background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/56901/bg-clouds.png") repeat 0 0 transparent;

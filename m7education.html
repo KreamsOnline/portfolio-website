@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="altPage">
+    <nav id="navbar">
+      <div class="logo">
+          <img src="./images/Logo.png" alt="Logo" height="100px" width="100px" >
+      </div>
+      <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./projects.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+        <div  class="hero-container">
+            <div class="name active">M7Education Non-Profit Redesign</div>
+            <div class="skills active">Case Study</div>
+            <div class="about-me">
+                <h2>M7Education Redesign</h2>
+                <p>This university bootcamp group project involved the redesign of a non-profit organization's website, M7 Education. We created a final prototype to showcase our work in this case study.</p>
+            </div>
+        </div>
+    </section>
+    <section class="project-overview">
+      <h2 class="title">Project Overview</h2>
+      <div class="separator"></div>
+      <h3><strong>Challenge:</strong></h3>
+      <div class="separator"></div>
+      <p>
+        <strong>Outdated Website Design:</strong> The primary challenge in this case study revolved around the suboptimal user experience provided by M7Education's existing website. The website's outdated design, complex information structure, and lack of accessibility hindered its ability to effectively engage its target audience and achieve its mission of providing quality education to underserved communities.
+      </p>
+      <p>
+        <strong>Low Engagement and Accessibility Issues:</strong> Low user engagement and conversion rates, alongside the website's lack of mobile responsiveness and inconsistent branding, compounded these issues. This made it difficult for visitors to access educational resources and engage with the organization's initiatives.
+      </p>
+      <p>
+        <strong>Redesign Solution:</strong> The central aim of the case study was to address these challenges by delivering a well-informed and user-centered redesign solution that would ultimately result in a more engaging, accessible, and impactful online platform.
+        <div class="separator"></div>
+      <h3><strong>Objectives:</strong></h3>
+      <div class="separator"></div>
+      <p><strong>Improve User Experience:</strong>  Enhance the website's user experience to ensure that visitors can easily find the information and resources they need.</p>
+      <p><strong>Increase Accessibility:</strong>  Make the website accessible to all users, including those with disabilities, by adhering to web accessibility standards.</p>
+      <p><strong>Enhance Branding:</strong>  Create a consistent and visually appealing design that aligns with M7 Education's brand, reinforcing the organization's identity and values.</p>
+      <p><strong>Improve Mobile Responsiveness:</strong>  Ensure the website is fully responsive to different devices, particularly mobile phones, to reach a broader audience.</p>
+      <p><strong>Enhance SEO and Visibility:</strong>  Optimize the website for search engines to increase its visibility and attract more traffic.</p>
+      <div class="separator"></div>
+        <p><strong>View Prototype:</strong> [You can add a link or description here]</p>
+        <div class="separator"></div>
+    </section>
+    <section class="design-process">
+        <h2 class="title">Design Process</h2>
+        <div class="separator"></div>
+        <h3>Research</h3>
+        <div class="separator"></div>
+        <ol>
+            <li >
+                <h3>Why we chose M7 Education?</h3>
+                <p>
+                  <strong>Impactful Mission:</strong> M7 Education's goal of funding school trips makes a real difference in students' lives.<br/>
+                  <strong>User-Focused:</strong> A redesign can create a better experience for donors, educators, and students.<br/>
+                  <strong>Boosting Support:</strong> Improved design can increase engagement and donations for the organization.<br/>
+                  <strong>Visibility and Growth:</strong> A fresh design can attract more people, helping M7 Education grow.  
+                </p>
+            </li>
+            <li >
+                <h3>Background of M7 Education</h3>
+                <p>M7 Education was established with a clear vision of promoting educational equity and supporting students in state schools facing financial challenges. Understanding that schools with high pupil premium (above 30%) often struggle to provide enriching educational experiences, M7 Education aims to bridge this gap by funding impactful programs that benefit both students and teachers. Through financial support for educational experiences, the non-profit seeks to empower students to unlock their potential and equip teachers with the tools to create a transformative learning environment, ultimately contributing to a more equitable educational landscape.</p>
+            </li>
+            <li >
+                <h3>Proto-Persona</h3>
+                <p><strong>Name:</strong> Bob Smith <br/>
+                  <strong>Age:</strong> 35 <br/>
+                  <strong>Occupation:</strong> School Teacher <br/>
+                  <strong>Goals:</strong> <br/>
+                  Make meaningful contributions to support educational equality and create a positive impact on students' lives, despite time constraints. <br/>
+                  Ensure transparency and accountability in the organisations he supports, particularly regarding the utilisation of his contributions. <br/>
+                  Engage in opportunities that are convenient and accessible, allowing him to participate from anywhere at his own pace. <br/>
+                  Be part of initiatives that empower students, especially those from underprivileged backgrounds, to unlock their full potential and pursue their dreams. <br/>
+                  <strong>Challenge:</strong> <br/>
+                  Limited availability due to demanding job and family responsibilities. <br/>
+                  Difficulty engaging actively in on-the-ground efforts due to time constraints. <br/>
+                  Balancing personal commitments with his passion for social impact and education equity. <br/>
+                </p>
+            </li>
+            <li >
+                <h3>Affinity Diagram</h3>
+                <img class="affinitydiagram" src="./images/affinitydiagram.png" alt="affinitydiagram" /><br/>
+                <!-- <p>[Detail the prototyping and testing phase]</p> -->
+                <br/>
+            </li>
+            <li>
+              <h3>Affinity Diagram Groups</h3>
+              <p><strong>Group 1: Motivation and Website Influence</strong><br/>
+                Interviewees across different roles, including teachers, parents, students, and community advocates, express a strong motivation to engage with non-profit organizations due to their commitment to educational opportunities. The website's role is pivotal in shaping their decision to support and engage. A user-friendly website that clearly communicates the organization's mission, impact, and funding application process significantly influences their motivation to contribute.<br/>
+                <br/>
+                <strong>Group 2: Website Engagement Frequency</strong><br/>
+                The frequency of visiting non-profit websites varies among interviewees, with some visiting fairly frequently and others occasionally. The need to stay informed about funding opportunities and trip details drives their website visits. Different roles have distinct reasons for visiting, such as planning school trips, exploring partnership opportunities, or suggesting new ideas.<br/>
+                <br/>
+                <strong>Group 3: Information Value and Alignment</strong><br/>
+                Interviewees emphasize the value of comprehensive and clear information on non-profit websites. They find it essential for websites to align with their interests and needs, whether it's providing educational details for teachers, aligning trips with children's interests for parents, or showcasing relevance to school curriculum for students. Effective communication of alignment significantly influences their support decisions.
+              </p>
+              <p><strong>Group 4: Positive User Experience</strong><br/>
+                A positive user experience on non-profit websites has a profound impact on interviewees' engagement. Clear, step-by-step processes for applications and interactive features, such as proposing new trip ideas, contribute to their positive impressions. Such experiences enhance their confidence and trust in the organization, leading to continued participation and support.<br/>
+                <br/>
+                <strong>Group 5: Information Accessibility Challenges</strong><br/>
+                Challenges in accessing information on non-profit websites are identified by interviewees. Overly complex application processes, scattered information, cluttered layouts, and lack of mobile-friendliness lead to frustration and discouragement. These challenges hinder their engagement and highlight the importance of user-friendly website design.<br/>
+                <br/>
+                <strong>Group 6: Enhancing Website Features</strong><br/>
+                Enhanced website features, such as personalized dashboards, trip calendars, funding calculators, and collaboration portals, are highly valued by interviewees. These features streamline the process of finding and participating in educational opportunities, fostering greater interaction, and facilitating effective engagement with the organization's mission.
+                </p>
+                <p>
+                <strong>Group 7: Transparency and Effective Communication</strong><br/>
+                Transparency and effective communication are fundamental for building trust and connection with non-profit organizations. Interviewees across roles emphasize the importance of clear information about funding allocation, selection processes, and regular updates on funded trips. Transparent communication strengthens their commitment and motivates ongoing support.<br/>
+                <br/>
+                <strong>Group 8: Impact and Success Stories</strong><br/>
+                Interviewees expect detailed and concrete impact reports that showcase the positive outcomes of funded trips. Stories, photos, and testimonials from beneficiaries contribute to trust-building. The ability to witness the organization's impact and success stories enhances their belief in the organization's mission and encourages continued involvement.<br/>
+                <br/>
+                <strong>Group 9: Personalized Content</strong><br/>
+                Personalized content is seen as a potential improvement for non-profit websites. Interviewees express a desire for tailored recommendations based on individual needs, such as grade levels, interests, and collaboration types. Personalization has the potential to enhance engagement by delivering relevant information and opportunities.<br/>
+                <br/>
+                <strong>Group 10: Website Navigation and Layout</strong><br/>
+                To retain engagement and support, non-profit websites should focus on featuring success stories, interactive elements, and consistent communication. Interviewees suggest strategies like showcasing testimonials, updating with inspiring stories, and offering practical resources. Regular updates and meaningful engagement efforts foster a sense of community and motivate ongoing participation.
+                </p>
+            </li>
+        </ol>
+        <div class="separator"></div>
+        <h3>Strategy</h3>
+        <div class="separator"></div>
+        <ol>
+          <li>
+              <h3>User Insight</h3>
+              <p>As you explore non-profit organizations like M7 Education, which offer funding for educational school trips, you're driven by the desire to ensure that children have meaningful learning opportunities. However, the website's lack of clear and personalized information hampers your ability to engage and contribute effectively. Data gained from the interviews reveals that frustration stems from the website's generic approach. Addressing this by creating tailored content and recommendations aligned with children's interests and grade levels can empower parents, fostering a stronger connection and motivating their active support.</p>
+          </li>
+          <li>
+              <h3>User Persona</h3>
+              <img class="userpersona" src="./images/userpersona2.png" alt="userpersona" />
+              <p>[Explain your strategic approach]</p>
+          </li>
+          <li>
+              <h3>Problem Statement</h3>
+              <p>Community advocates like Emily, who are dedicated to promoting equal education opportunities and collaborating with non-profit organizations, face challenges in effectively engaging and supporting initiatives due to a lack of transparent information, limited collaboration resources, and inconsistent updates on non-profit websites. Without tailored tools and resources, community advocates are hindered in their efforts to make a meaningful impact and contribute to positive change in education.</p>
+          </li>
+          <li>
+              <h3>Competitor Analysis</h3>
+              <p><strong>Structured Evaluation:</strong> The check points provide a structured framework for assessing competitors' strengths,   weaknesses, and strategies across various critical aspects. This ensures that your analysis covers a comprehensive range of factors, leaving no crucial area unexplored.<br/>
+              <strong>Informed Decision-Making:</strong> By systematically evaluating each aspect, you gather valuable insights that help in making informed decisions during the redesign process. These insights allow you to identify best practices, potential areas for improvement, and innovative ideas that can be applied to M7 Education's redesign.<br/>
+              <strong>Identifying Opportunities:</strong> Through the analysis, you can uncover opportunities for M7 Education to stand out and differentiate itself from competitors. This could involve implementing unique engagement strategies, refining the donation process, or enhancing transparency, all of which contribute to a more compelling user experience.<br/>
+              <strong>User-Centric Approach:</strong> The checkpoints are designed to focus on user experiences, engagement, and satisfaction. By analyzing competitors' user-centric strategies, you can better tailor M7 Education's redesign to meet the needs and expectations of its target audience.<br/>
+              <strong>Alignment with Goals:</strong> The check points ensure that your analysis aligns with the specific goals of the redesign project. This alignment keeps the analysis relevant and directly contributes to creating a redesigned platform that aligns with M7 Education's mission and objectives.</p><br/>
+              <img class="competitoranalysis" src="./images/competitoranalysis.png" alt="competitoranalysis" />
+          </li>
+          <li>
+            <h3>Feature Prioritization - Impact/Priority</h3>
+            <img class="featureprioritization" src="./images/fp-impact-priority.png" alt="fp-impact-priority" />
+          </li>
+          <li>
+            <h3>Feature Prioritization - Complexity/Effort</h3>
+            <img class="featureprioritization" src="./images/fp-effort-complexity.png" alt="fp-complexity-effort" />
+          </li>
+        </ol>
+        <div class="separator"></div>
+        <h3>Design</h3>
+        <div class="separator"></div>
+        <ol>
+          <li >
+              <h3>User Scenario</h3>
+              <img class="featureprioritization" src="./images/userscenario.png" alt="userscenario" />
+          </li>
+          <li >
+              <h3>Storyboard</h3>
+              <img class="featureprioritization" src="./images/storyboard.png" alt="storyboard" />
+          </li>
+          <li >
+              <h3>User Flow</h3>
+              <img class="featureprioritization" src="./images/userflow.png" alt="userflow" />
+          </li>
+          <li >
+              <h3>Style Guide</h3>
+              <img class="featureprioritization" src="./images/styleguide.png" alt="styleguide" />
+          </li>
+        </ol>
+        <div class="separator"></div>
+        <h3>Prototype and Test</h3>
+        <div class="separator"></div>
+        <ol>
+          <li >
+              <h3>HomePage</h3>
+              <img class="featureprioritization" src="./images/homepage.png" alt="homepage" />
+          </li>
+          <li >
+              <h3>Donation Component</h3>
+              <img class="featureprioritization" src="./images/donationcomponent.png" alt="donationcomponent" />
+          </li>
+          <li >
+              <h3>Desktop Design</h3>
+              <img class="featureprioritization" src="./images/Desktopdesign.png" alt="desktopdesign" />
+          </li>
+          <li >
+              <h3>Prototype and Test</h3>
+              <p>[Ask for Prototype Link]</p>
+          </li>
+          <li>
+            <h3>Usability Testing - M7 Education</h3>
+            <p>During our initial walkthrough of the website we came across a number of issues that we felt needed to be addressed in the redesign. <br/>
+              5 usability tests were done, looking at the areas in which we felt were going to be most used when using the website for example:<br>
+              - Finding the purpose of the organisation <br/>
+              - Making a donation <br/>
+              - Finding the most recent news <br/>
+              - Finding the correct contact information.<br/>
+              </p>
+          </li>
+          <li>
+            <h3>Usability Testing M7 Education Findings</h3>
+            <p><strong>Task 1 - Figuring Out What the Organisation Does:</strong><br/>
+              - Majority of users struggled to quickly grasp the organisation's purpose from the homepage.<br>
+              - Users commonly relied on the "About" page to understand the mission.<br/>
+              - Adding a brief tagline or description on the homepage was suggested for immediate clarity.<br/>
+              <br/>
+              <strong>Task 2 - Making a Donation:</strong><br>
+              - Most users easily located the "Donate" button on the homepage.<br/>
+              - The donation process was perceived as lengthy and overwhelming by several users.<br/>
+              - Suggestions included providing a "Quick Donate" option and simplifying the process steps. <br/>
+              <br/>
+              <strong>Task 3 - Finding the Most Recent Story/News:</strong><br/>
+              - Users often identified the "Blog" section, though some questioned the label's connection to news.<br/>
+              - Some users were unsure about the purpose of a bottom section redirecting to news.<br/>
+              - Renaming "Blog" to "News & Updates" and providing clearer redirection indicators were recommended.<br/>
+              <br/>
+              <strong>Task 4 - Finding Contact Information:</strong><br/>
+              - Users generally found the "Contact" section but encountered challenges with the presentation of contact details.<br/>
+              - Email addresses at the bottom of forms were often difficult to distinguish due to their appearance.<br/>
+              - Recommendations included using distinct colours, larger fonts, or altering the format for improved visibility.<br/>
+              </p>
+          </li>
+        </ol>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-social">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">LinkedIn</a>
+          </div>
+          <div class="footer-contact">
+            <a href="mailto:your@email.com">Email</a>
+            <a href="#">Phone</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2023 Akeem Sterling-Brown
+        </div>
+        <button id="backToTopBtn">Back to Top</button>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="altPage">
+    <nav id="navbar">
+      <div class="logo">
+          <img src="./images/Logo.png" alt="Logo" height="100px" width="100px" >
+      </div>
+      <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./casestudy.html">About</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+        <div  class="hero-container">
+            <div class="name active">Case Study 1</div>
+            <div class="skills active">M7 Education Redesign</div>
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>I'm a dedicated UX/UI designer and developer with a strong foundation in design principles and a knack for crafting user-centered digital experiences. Having completed a UX/UI designer bootcamp, I've honed my skills in tools like Photoshop, Illustrator, Figma, and Miro, while also mastering HTML, CSS3, JavaScript, ReactJS, and Next.js for development. What sets me apart is my problem-solving expertise, which I apply to create designs that seamlessly merge form and function. I'm passionate about delivering elegant solutions that enhance the user experience, and I'm eager to collaborate with you to turn your ideas into reality.</p>
+            </div>
+        </div>
+    </section>
+    <div class="separator"></div>
+    <h2 class="title">Contact Me</h2>
+    <div class="separator"></div>
+    <div class="contact-form">
+    <h2>Get a Quote</h2>
+    <form action="your-server-script.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="button2" type="submit">Submit</button>
+    </form>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-social">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">LinkedIn</a>
+          </div>
+          <div class="footer-contact">
+            <a href="mailto:your@email.com">Email</a>
+            <a href="#">Phone</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2023 Akeem Sterling-Brown
+        </div>
+        <button id="backToTopBtn">Back to Top</button>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
